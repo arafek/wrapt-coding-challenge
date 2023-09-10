@@ -1,4 +1,17 @@
-# README
+# Wrapt Coding Challenge
+
+This is the coding challenge for the Wrapt position of Fullstack Developer.
+
+## Instructions
+
+1. Create a free account on [Filestack](https://dev.filestack.com/signup/free/) and save it's API key in the `.env` file as `REDWOOD_ENV_FILESTACK_API_KEY=<filestack api key>`;
+2. Run `yarn redwood prisma migrate dev` to apply all the migrations to the dev database.
+
+After following these steps, the project can be started with the command `yarn redwood dev`.
+
+---
+
+# REDWOOD README
 
 Welcome to [RedwoodJS](https://redwoodjs.com)!
 
