@@ -12,7 +12,7 @@ model File {
   id        Int       @id @default(autoincrement())
   name      String
   url       String
-  checksum  String
+  checksum  String    @unique
   createdAt DateTime  @default(now())
   updatedAt DateTime  @default(now())
 }
