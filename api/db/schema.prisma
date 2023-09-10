@@ -16,3 +16,12 @@ model File {
   createdAt DateTime  @default(now())
   updatedAt DateTime  @default(now())
 }
+
+model VersionedFile {
+  id        Int       @id @default(autoincrement())
+  version   Int       @default(1)
+  name      String
+  key       String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @default(now())
+}
