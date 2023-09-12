@@ -14,6 +14,12 @@ import ScaffoldLayout from 'src/layouts/ScaffoldLayout'
 const Routes = () => {
   return (
     <Router>
+      <Set wrap={ScaffoldLayout} title="VersionedFiles" titleTo="versionedFiles" buttonLabel="New VersionedFile" buttonTo="newVersionedFile">
+        <Route path="/versioned-files/new" page={VersionedFileNewVersionedFilePage} name="newVersionedFile" />
+        <Route path="/versioned-files/{id:Int}/edit" page={VersionedFileEditVersionedFilePage} name="editVersionedFile" />
+        <Route path="/versioned-files/{id:Int}" page={VersionedFileVersionedFilePage} name="versionedFile" />
+        <Route path="/versioned-files" page={VersionedFileVersionedFilesPage} name="versionedFiles" />
+      </Set>
       <Set wrap={ScaffoldLayout} title="Files" titleTo="files" buttonLabel="New File" buttonTo="newFile">
         <Route path="/files/new" page={FileNewFilePage} name="newFile" />
         <Route path="/files/{id:Int}/edit" page={FileEditFilePage} name="editFile" />

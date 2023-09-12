@@ -4,8 +4,17 @@ This is the coding challenge for the Wrapt position of Fullstack Developer.
 
 ## Instructions
 
-1. Create a free account on [Filestack](https://dev.filestack.com/signup/free/) and save it's API key in the `.env` file as `REDWOOD_ENV_FILESTACK_API_KEY=<filestack api key>`;
-2. Run `yarn redwood prisma migrate dev` to apply all the migrations to the dev database.
+1. Create a free account on [Filestack](https://dev.filestack.com/signup/free/) and save it's API key in the `.env` file as following:
+```
+REDWOOD_ENV_FILESTACK_API_KEY=<filestack api key>
+```
+2. Create a free [AWS account](https://portal.aws.amazon.com/billing/signup) and [set up credentials for it](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_manage.html), then save these credentials on the `.env` file as following:
+```
+AWS_ACCESS_KEY_ID=<aws access key id>
+AWS_SECRET_ACCESS_KEY=<aws access key secret>
+AWS_REGION=<aws region>
+```
+3. Run `yarn redwood prisma migrate dev` to apply all the migrations to the dev database.
 
 After following these steps, the project can be started with the command `yarn redwood dev`.
 
